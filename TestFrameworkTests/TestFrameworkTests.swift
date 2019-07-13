@@ -11,10 +11,20 @@ import XCTest
 
 class TestFrameworkTests: XCTestCase {
 
+    var nghianv: NghiaNV!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        nghianv = NghiaNV()
     }
 
+    func testAdd() {
+        XCTAssertEqual(nghianv.add(a: 4, b: 4), 8)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(nghianv.sub(a: 5, b: 1), 4)
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }

@@ -15,6 +15,7 @@
 		8A7DC11422DA1585008AF685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7DC11222DA1585008AF685 /* Main.storyboard */; };
 		8A7DC11622DA1587008AF685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7DC11522DA1587008AF685 /* Assets.xcassets */; };
 		8A7DC11922DA1587008AF685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7DC11722DA1587008AF685 /* LaunchScreen.storyboard */; };
+		8A7DC11F22DA16B6008AF685 /* NghiaNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7DC11E22DA16B6008AF685 /* NghiaNV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8A7DC11522DA1587008AF685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7DC11822DA1587008AF685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A7DC11A22DA1587008AF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7DC11E22DA16B6008AF685 /* NghiaNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NghiaNV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				8A7DC0F122DA154D008AF685 /* TestFramework.h */,
 				8A7DC0F222DA154D008AF685 /* Info.plist */,
+				8A7DC11E22DA16B6008AF685 /* NghiaNV.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					8A7DC0ED22DA154D008AF685 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					8A7DC0F622DA154D008AF685 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7DC11F22DA16B6008AF685 /* NghiaNV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		8A7DC10322DA154D008AF685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fdfd.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		8A7DC10422DA154D008AF685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		8A7DC10622DA154D008AF685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9E87K75Q44;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
@@ -503,6 +512,7 @@
 		8A7DC10722DA154D008AF685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9E87K75Q44;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
