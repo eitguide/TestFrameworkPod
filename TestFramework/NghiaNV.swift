@@ -17,5 +17,9 @@ public final class NghiaNV {
     public func sub(a: Int, b: Int) -> Int {
         return a - b
     }
+    
+    public func nghianv() -> String {
+        return "NghiaNV"
+    }
 
 }
